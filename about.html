@@ -5,119 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: relative;
-        }
-        .logo {
-            max-height: 50px;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .menu-toggle {
-            display: none;
-            font-size: 24px;
-            background: none;
-            border: none;
-            color: #fff;
-            cursor: pointer;
-        }
-        .mobile-menu {
-            display: none;
-            position: absolute;
-            top: 60px;
-            right: 20px;
-            background: #333;
-            border-radius: 5px;
-            padding: 10px;
-        }
-        .mobile-menu a {
-            display: block;
-            color: #fff;
-            text-decoration: none;
-            margin: 5px 0;
-        }
-        .mobile-menu a:hover {
-            text-decoration: underline;
-        }
-        .show {
-            display: block;
-        }
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-        main h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .about, .vision-mission {
-            margin-bottom: 40px;
-            padding: 0 20px;
-        }
-        .about h3, .vision-mission h3 {
-            font-size: 1.5em;
-            margin-bottom: 15px;
-        }
-        .about p, .vision-mission p {
-            font-size: 1em;
-            line-height: 1.6;
-            color: #333;
-        }
-        .portfolio {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            justify-content: center;
-        }
-        .portfolio img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .portfolio img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-        }
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-            nav {
-                display: none;
-            }
-        }
-    </style>
+   
 </head>
 <body>
     <header>
@@ -167,10 +55,6 @@
     <!-- <footer>
         <p>&copy; 2024 Barangay Mabca</p>
     </footer> -->
-    <script>
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('.mobile-menu').classList.toggle('show');
-        });
-    </script>
+  
 </body>
 </html>
