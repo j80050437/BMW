@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+        .logo {
+            max-height: 50px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .menu-toggle {
+            display: none;
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+        }
+        .mobile-menu {
+            display: none;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            background: #333;
+            border-radius: 5px;
+            padding: 10px;
+        }
+        .mobile-menu a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+        .mobile-menu a:hover {
+            text-decoration: underline;
+        }
+        .show {
+            display: block;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            padding: 20px;
+            text-align: center;
+        }
+        main h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .social-icons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .icon {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1em;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .icon:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/logo.jpg" alt="Barangay Mabca Logo" class="logo">
+        <h1>Barangay Mabca Website</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <div class="mobile-menu">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </header>
+    <main>
+        <h2>Contact Us</h2>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="icon">Facebook</a>
+            <a href="mailto:example@gmail.com" class="icon">Gmail</a>
+            <a href="https://instagram.com" target="_blank" class="icon">Instagram</a>
+            <a href="https://twitter.com" target="_blank" class="icon">Twitter</a>
+        </div>
+    </main>
+    <!-- <footer>
+        <p>&copy; 2024 Barangay Mabca</p>
+    </footer> -->
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
