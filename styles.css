@@ -5,13 +5,14 @@
 }
 
 body {
-    font-family: 'Times New Roman', serif; /* Use Times New Roman font */
+    font-family: 'Poppins', sans-serif; /* Updated font for a more modern look */
     margin: 0;
     padding: 0;
-background-image: url('img/1.jpg');
-    background-size: cover; /* Cover the entire page */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent repeating */
+    background-image: url('img/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Set text color to white */
 }
 
 header {
@@ -19,7 +20,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7); /* Darker transparent black */
 }
 
 .logo {
@@ -29,7 +30,8 @@ header {
 }
 
 h1 {
-    color: #fff;
+    color: #fff; /* Ensure the header text is white */
+    font-family: 'Poppins', sans-serif; /* A modern and clean font */
 }
 
 nav {
@@ -38,8 +40,9 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #fff; /* White text for links */
     text-decoration: none;
+    font-family: 'Poppins', sans-serif; /* Keep font consistent */
 }
 
 nav a:hover {
@@ -57,7 +60,8 @@ nav a:hover {
 
 .main {
     padding: 20px;
-    color: #fff;
+    color: #fff; /* Main content text stays white */
+    font-family: 'Poppins', sans-serif; /* Consistent font */
 }
 
 .button {
@@ -67,6 +71,7 @@ nav a:hover {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .button:hover {
@@ -93,7 +98,9 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black for footer */
+    color: #fff; /* White text */
+    font-family: 'Poppins', sans-serif; /* Font consistency */
 }
 
 /* Responsive styles */
@@ -101,11 +108,11 @@ footer {
     nav {
         display: none;
     }
-    
+
     .menu-toggle {
         display: block;
     }
-    
+
     .mobile-menu {
         display: none;
         flex-direction: column;
@@ -117,16 +124,16 @@ footer {
         padding: 10px;
         border-radius: 5px;
     }
-    
+
     .mobile-menu a {
         color: #fff;
         text-decoration: none;
     }
-    
+
     .mobile-menu a:hover {
         text-decoration: underline;
     }
-    
+
     .mobile-menu.show {
         display: flex;
     }
